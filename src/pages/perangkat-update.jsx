@@ -34,7 +34,7 @@ const PerangkatUpdate = () => {
         ],
         });
 
-    const [selectedValue, setSelectedValue] = useState(["KEYBOARD"]);
+    const [selectedValue, setSelectedValue] = useState();
 
     const handleValueChange = (details) => {
         // details.value berisi array nilai yang dipilih (contoh: ["CPU"])
