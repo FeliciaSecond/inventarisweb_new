@@ -57,6 +57,8 @@ const MyDrawer = ({ namadrawer, logodrawer }) => {
                 >
                   <Text>Menu Dashboard</Text>
                 </Link>
+
+
                 <Link
                   as={RouterLink}
                   to="pengguna"
@@ -70,6 +72,22 @@ const MyDrawer = ({ namadrawer, logodrawer }) => {
                 >
                   <Text>Menu Pengguna</Text>
                 </Link>
+
+                <Link
+                  as={RouterLink}
+                  to="perangkat"
+                  onClick={() => setOpen(false)}
+                  bgColor="blue.100"
+                  color="blackAlpha.800"
+                  padding="10px"
+                  _hover={{ backgroundColor: "blue.400", color: "white" }}
+                  borderRadius="10px"
+                  fontWeight="bold"
+                >
+                  <Text>Menu Perangkat</Text>
+                </Link>
+
+
                 <Link
                   as={RouterLink}
                   to="profil"
@@ -83,6 +101,9 @@ const MyDrawer = ({ namadrawer, logodrawer }) => {
                 >
                   <Text>Menu Profil</Text>
                 </Link>
+
+                
+                
               </Box>
             </Drawer.Body>
             <Drawer.Footer>
